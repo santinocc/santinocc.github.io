@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>La Cocina de Magaly</title>
+    <link rel="stylesheet" href="../css/kitchenStyle.css" />
+</head>
+<body>
+    <h1>La Cocina de Magaly</h1>
+    <section>
+        <h2>Menu</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>FOOD</th>
+                    <th>Cost</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Huevos Motulenios</td>
+                    <td>$10</td>
+                </tr>
+                <tr>
+                    <td>Panucho</td>
+                    <td>$3</td>
+                </tr>
+                <tr>
+                    <td>Cochinita Pibil</td>
+                    <td>$12</td>
+                </tr>
+                <tr>
+                    <td>Queso Relleno</td>
+                    <td>$13</td>
+                </tr>
+            </tbody>
+        </table>
+    </br>
+    <table>
+        <thead>
+            <tr>
+                <th>DRINKS</th>
+                <th>Cost</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Agua de Jamaica</td>
+                <td>$3</td>
+            </tr>
+            <tr>
+                <td>Agua de Chaya</td>
+                <td>$3</td>
+            </tr>
+            <tr>
+                <td>Agua de Limonada</td>
+                <td>$3</td>
+            </tr>
+            <tr>
+                <td>Agua de Horchata</td>
+                <td>$3</td>
+            </tr>
+        </tbody>
+    </table>
+    </section>
+    <section>
+        <h2>Submit Your Review</h2>
+        <form action="https://us-central1-nucamp-production.cloudfunctions.net/post/formdata" method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" />
+            <label for="rating">Your Rating:</label>
+            1 <input type="range" id="rating" name="rating" min="1" max="5" /> 5
+            <input type="submit" id="submit-btn" />
+        </form>
+    </section>
+    <section>
+        <h2>Contact</h2>
+        <p>Call us at: <a href="tel:+15555551212">1-555-555-1212</a></p>
+        <address>
+            La Cocina de Magaly<br />
+            3443 Hilyard St<br />
+            Eugene, OR 97405
+        </address>
+    </section>
+</body>
+</html>
