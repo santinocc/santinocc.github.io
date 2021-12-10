@@ -1,18 +1,18 @@
 {
   "name": "personalwebsite",
   "version": "1.0.0",
-  "description": "Git and NPM",
+  "description": "This is my Personal Website",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server",
     "start": "npm run lite",
-    "lite": "lite-server"
-  },
+    "test": "echo \"Error: no test specified\" && exit 1"
+ },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Santi-dog/personalWebsite.git"
   },
-  "author": "",
+  "author": "Santino Cervera",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Santi-dog/personalWebsite/issues"
@@ -20,5 +20,10 @@
   "homepage": "https://github.com/Santi-dog/personalWebsite#readme",
   "devDependencies": {
     "lite-server": "^2.6.1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.2",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
   }
 }
