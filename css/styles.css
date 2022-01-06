@@ -43,3 +43,9 @@ h4 {
 .navbar {
     background-color: #f0a824f1;
 }
+
+.transparent-background {
+    opacity:0.4;
+    filter:alpha(opacity=40);
+    position: absolute;
+}
