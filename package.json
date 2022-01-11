@@ -4,6 +4,7 @@
   "description": "This is my Personal Website",
   "main": "index.html",
   "scripts": {
+    "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
     "lite": "lite-server",
     "start": "npm run lite",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,6 +20,8 @@
   },
   "homepage": "https://github.com/Santi-dog/personalWebsite#readme",
   "devDependencies": {
+    "copyfiles": "^2.2.0",
+    "imagemin-cli": "^5.1.0",
     "lite-server": "^2.6.1"
   },
   "dependencies": {
